@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <title>Datasaurus Dozen</title>
+
+  <!-- load in packages and styling -->
+  <script src="https://d3js.org/d3.v6.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="page">
+    <h1>Datasaurus Dozen</h1>
+    <h4>Compare two datasets.</h4>
+
+    <!-- category dropdowns -->
+    <div class="controls">
+      <label>Category 1 <select id="cat1"></select></label>
+      <label>Category 2 <select id="cat2"></select></label>
+    </div>
+
+    <!-- scatter plots -->
+    <div class="charts">
+      <div class="chart-wrap">
+        <div class="chart-title" id="title1">Category 1</div>
+        <div id="chart1"></div>
+      </div>
+      <div class="chart-wrap">
+        <div class="chart-title" id="title2">Category 2</div>
+        <div id="chart2"></div>
+      </div>
+    </div>
+
+    <!-- histogram -->
+    <div class="chart-wrap" style="margin-top:20px;">
+      <div class="chart-title">X Counts (Bin Size 20)</div>
+      <div id="histX"></div>
+    </div>
+  </main>
+
+  <!-- call the js file -->
+  <script src="js/script.js"></script>
+</body>
+</html>

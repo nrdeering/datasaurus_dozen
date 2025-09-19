@@ -1,0 +1,80 @@
+/*
+
+This styling file is used to assign the colors and theme for our Datasaurus Dozen datasets.
+The goal was to make an easy to read, interactive, clean, and dark mode style dashboard for users.
+
+*/
+
+body{
+    margin:0; 
+    background:#0b0f17; 
+    color:#e5e7eb;
+    font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+}
+
+.page{
+    max-width:1200px; 
+    margin:40px auto; 
+    padding:0 20px; 
+    text-align:center; 
+}
+
+h1{ 
+    margin-bottom:16px; 
+    font-size:32px; 
+    font-weight:700; 
+}
+
+.controls{ 
+    display:flex; 
+    gap:20px; 
+    justify-content:center; 
+    margin-bottom:24px; 
+}
+
+label{ 
+    font-size:14px; 
+    color:#9ca3af; 
+}
+
+select{
+    padding:6px 10px; 
+    border-radius:8px; 
+    border:1px solid #374151;
+    background:#111827; 
+    color:#e5e7eb; 
+    font:inherit;
+}
+
+.charts{
+    display:flex; 
+    gap:20px; 
+    justify-content:center; 
+    flex-wrap:wrap; 
+}
+
+.chart-wrap{
+    background:#0f172a; 
+    border:1px solid #1f2937; 
+    border-radius:12px;
+    padding:10px; 
+    flex:1; 
+    min-width:350px; 
+    box-shadow:0 1px 2px rgba(0,0,0,.4);
+}
+
+.axis path,.axis line{ 
+    stroke:#374151; 
+}
+
+.axis text{ 
+    fill:#cbd5e1; 
+    font-size:12px; 
+}
+
+.chart-title{ 
+    margin:8px 0; 
+    font-size:16px; 
+    font-weight:600; 
+    color:#9ca3af; 
+}
