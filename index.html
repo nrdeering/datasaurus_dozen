@@ -13,8 +13,9 @@
 <body>
   <main class="page">
     <h1>Datasaurus Dozen</h1>
-    <h4>Compare two datasets.</h4>
-
+    <h2>In this data story, we will explore the datasaurus dozen dataset and how datasets compare to one another.</h2>
+    <h2>Please begin by chossing 2 datasets of your choice below:</h2>
+    
     <!-- category dropdowns -->
     <div class="controls">
       <label>Category 1 <select id="cat1"></select></label>
@@ -33,11 +34,54 @@
       </div>
     </div>
 
-    <!-- histogram -->
-    <div class="chart-wrap" style="margin-top:20px;">
-      <div class="chart-title">X Counts (Bin Size 20)</div>
-      <div id="histX"></div>
+    <!-- Summary data cards -->
+    <div class="cards-row">
+
+      <!-- Category 1 Data -->
+      <div id="data-cards1">
+        <div>Mean X: <span id="card1-meanx"></span></div>
+        <div>Median X: <span id="card1-medianx"></span></div>
+        <div>Mean Y: <span id="card1-meany"></span></div>
+        <div>Median Y: <span id="card1-mediany"></span></div>
+        <div>R-Square: <span id="card1-r2"></span></div>
+      </div>
+
+      <!-- Category 2 Data -->
+      <div id="data-cards2">
+        <div>Mean X: <span id="card2-meanx"></span></div>
+        <div>Median X: <span id="card2-medianx"></span></div>
+        <div>Mean Y: <span id="card2-meany"></span></div>
+        <div>Median Y: <span id="card2-mediany"></span></div>
+        <div>R-Square: <span id="card2-r2"></span></div>
+      </div>
+
     </div>
+
+    <h2>Notice anything? Yes, the datasets have the nearly the same or identical means for both X and Y! Additionally, they have incredibly similar medians, trendlines, and R-Squares!</h2>
+    <h2>Let's take a look now at the histograms for the X values and see their distributions:</h2>
+
+    <!-- histogram -->
+    <div class="charts"></div>
+      <div class="chart-wrap" style="margin-top:20px;">
+        <div class="chart-title">X Counts (Bin Size 20)</div>
+        <div id="histX"></div>
+    </div>   
+   
+    <h2>As expected, the distributions of our X valuesacross datasets vary quite a bit due to their unique shapes.</h2>
+    <h2>For fun, let's look at some cointour density charts and see where the points for each dataset is more strongly positioned in their respective x,y positions. The darker the contour, the more points that reside in that area!</h2>
+
+    <!-- contour density charts -->
+    <div class="charts" style="margin-top:20px;">
+      <div class="chart-wrap">
+        <div class="chart-title">Density of Category 1</div>
+        <div id="density1"></div>
+      </div>
+      <div class="chart-wrap">
+        <div class="chart-title">Density of Category 2</div>
+        <div id="density2"></div>
+      </div>
+    </div>
+    
   </main>
 
   <!-- call the js file -->

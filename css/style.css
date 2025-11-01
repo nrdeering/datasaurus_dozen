@@ -78,3 +78,57 @@ select{
     font-weight:600; 
     color:#9ca3af; 
 }
+
+.tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.2;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s ease;
+}
+
+.cards-row{
+  display:flex;
+  gap:16px;
+  justify-content: center;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  margin:16px 0 24px;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 2rem;       
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+#data-cards1, #data-cards2 {
+  background: #111827;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: #e5e7eb;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.card{
+  background:#111827;
+  border:1px solid #1f2937;
+  border-radius:10px;
+  padding:10px 14px;
+  color:#e5e7eb;
+  box-shadow:0 3px 10px rgba(0,0,0,0.3);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.card:hover{ transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,0.4); }
+.card h4{ font-size:13px; font-weight:600; color:#9ca3af; margin:0 0 4px; }
+.card p{ font-size:16px; font-weight:500; margin:0; }
